@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+      button {
+        border: none;
+        background-color: #e25c35;
+        border-radius: 25px;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 500;
+        cursor: pointer;
+        padding: 15px 20px;
+        filter: brightness(1);
+        transition: filter 0.5s;
+      }
+
+      .tableSec {
+        margin-top: 50px;
+        width: 65%;
+        margin: auto;
+
+        padding: 10px;
+      }
+      .hero {
+      }
+      .hero > img {
+        height: 23.625rem !important;
+
+        width: calc(100% - 3rem);
+        margin: auto;
+      }
+      li{
+        font-size: 22px;
+        margin-bottom: 15px;
+      }
+      .hero-texte {
+        font-family: "Moderat-Bold", "Helvetica Neue", Arial, sans-serif;
+        height: 45vh;
+        font-weight: 400;
+        padding: 10px;
+        border-radius: 5px;
+        margin-right: 40%;
+        margin-left: 25%;
+        margin-top: -35px;
+        width: 50%;
+        background-color: whitesmoke;
+        box-shadow:  5px 5px lightgrey;
+        z-index: 1;
+        position: relative;
+      }
+      .hero-texte h1{
+        font-size: 45px!important;
+      }
+      thead {
+        background-color: lightsalmon;
+        font-weight: 300;
+      }
+      .foo {
+        position: fixed;
+        bottom: 0px;
+      }
+      p {
+        display: block;
+        font-size: 22px;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+      }
+
+      .article {
+        width: 35%;
+        text-align: left;
+        padding: 10px;
+        margin: auto;
+      }
+      /* .css-njunhz {
+        -webkit-column-count: 4;
+        -moz-column-count: 4;
+        column-count: 4;
+      } */
+
+      .css-1l2dygu {
+        position: relative;
+        list-style: none;
+        padding: 25px;
+        margin: auto;
+        width: 75%;
+        display: grid;
+        -webkit-column-gap: var(--ds-spacings-m);
+        column-gap: var(--ds-spacings-m);
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .css-1l2dygu a {
+        font-weight: 900;
+        margin-left: 10px;
+        text-decoration: none;
+        cursor: pointer;
+      }
+  
+      .city-list {
+        width: 75%;
+        align-items: center;
+        margin: auto;
+      }
+      .city-list h2 {
+        text-align: center;
+      }
+      @media screen and (max-width: 770px) {
+        .hero-texte {
+          width: 100%;
+          text-align: center;
+          margin: auto;
+          padding: 10px;
+        }
+        .article {
+          width: 100%;
+          text-align: center;
+          margin: auto;
+          padding: 10px;
+        }
+        img {
+          visibility: hidden !important;
+        }
+      }
+    
+    </style>
+    <title>prix pose robinet</title>
+  </head>
+  <body>
+    <div class="hero">
+      <img
+        src="./Téléchargements/salledebain.png"
+        class="img-fluid rounded mx-auto d-block"
+        alt="..."
+      />
+    </div>
+    <section class="hero-texte">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Acceuil</a></li>
+          <li class="breadcrumb-item"><a href="#">Plombier</a></li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Prix de l’installation...
+          </li>
+        </ol>
+      </nav>
+      <div>
+        <h1 style="font: size 35px;">Prix de l’installation d’un robinet</h1>
+        <br />
+        <p>
+          L’installation d’un robinet peut se révéler décisive dans la <br />
+          de votre cuisine ou de salle de bains.<br />
+          Cela semble un détail, mais peut vous permettre d’optimiser vos tâches
+          au quotidien.
+        </p>
+      </div>
+      
+      
+      </nav>
+    </section>
+    <nav id="postal"class="navbar navbar-light "  style="height: 18vh; background-color:#e25c35 ;margin-bottom: 50px;">
+      <form class="container-fluid justify-content-center d-flex flex-column">
+        <p class="text-light text-center">Trouvez un artisan près de chez vous !<br>
+         
+        </p>
+      
+       
+        <div class="input-group mb-3 " style="width: 20%;">
+          <input type="text" class="form-control" placeholder="Code postal" aria-label="Recipient's username" aria-describedby="button-addon2">
+          <button class="btn btn-outline-light" type="button" id="button-addon2">Trouver un artisan</button>
+        </div>
+      </form>
+    </nav>
+    <!-- <nav class="navbar navbar-light bg-light">
+      <div class="">
+        <div class="">
+          <div class="">
+            <h2 class="css-1v1jk30 e184soif3">
+              Trouvez un artisan près de chez vous !
+            </h2>
+            <form
+          
+            >
+              <div class="css-1aanpmb e184soif1">
+                <label
+               
+                  ><span
+                  
+                    >Code postal</span
+                  >
+                  <div class="css-tmi15l erakbsx10">
+                    <input
+                      type="text"
+                      data-testid="postal-code-zip"
+                      autocomplete="postal-code"
+                      direction="down"
+                      value=""
+                      name="postalCode"
+                      id="postalCode"
+                      required=""
+                      maxlength="5"
+                      inputmode="numeric"
+                      pattern="[0-9]{5}"
+                      class="css-1xdhyk6 erakbsx8"
+                    /></div></label
+                >
+              </div>
+              <button
+               
+              >
+                Trouver des artisans
+              </button>
+            </form>
+          </div>
+      <a class="navbar-brand" href="#">Fixed bottom</a>
+    </nav> -->
+    <br />
+    <section class="tableSec">
+      <table class="table table-bordered rounded border-darklight">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">Prix minimum</th>
+            <th scope="col">Prix moyen</th>
+            <th scope="col">Prix maximum</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-active">
+            <th scope="row">Robinet de cuisine</th>
+            <td>10 €</td>
+            <td>120 €</td>
+            <td>400 €</td>
+          </tr>
+          <tr>
+            <th scope="row">Robinet de salle de bains</th>
+            <td>8 €</td>
+            <td>110 €</td>
+            <td>640 €</td>
+          </tr>
+          <tr class="table-active">
+            <th scope="row">Mitigeur</th>
+            <td>8 €</td>
+            <td>110 €</td>
+            <td>550 €</td>
+          </tr>
+          <tr>
+            <th scope="row">Mitigeur thermostatique</th>
+            <td>23 €</td>
+            <td>150 €</td>
+            <td>640 €</td>
+          </tr>
+          <tr class="table-active">
+            <th scope="row">Mélangeur</th>
+            <td>11 €</td>
+            <td>120 €</td>
+            <td>425 €</td>
+          </tr>
+          <tr>
+            <th scope="row">Pose</th>
+            <td>70 €</td>
+            <td>80 €</td>
+            <td>90 €</td>
+          </tr>
+          <tr class="table-active">
+            <th scope="row">Total fourniture et pose</th>
+            <td>78 €</td>
+            <td>200 €</td>
+            <td>730 €</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <br />
+    <section class="article">
+      <p>
+        Ces tarifs sont exprimés en Euros, toutes taxes comprises (TTC). Ils
+        sont issus de moyennes de prix de divers sites internet de construction.
+        L'installation d'un robinet demande en général l’intervention d’un
+        expert. En effet, seul un professionnel sera en mesure d’intervenir sans
+        difficulté sur votre réseau de plomberie, en réalisant un travail
+        efficace et rapide. <br />
+
+        Vous souhaitez installer un robinet?
+      </p>
+      <br />
+
+      <button>
+        Demandez un devis gratuit pas des professionnels qualifiées
+      </button>
+      <br />
+      <br />
+      <h2>
+        Prix de l’installation d’un robinet :<br />
+        facteurs de coûts
+      </h2>
+      <img src="./Téléchargements/mitigeur.jpg" alt="" />
+      <br />
+      <p>
+        <strong>L’installation de robinets</strong> peut convenir à tous les
+        budgets, des plus modestes (modèles en nickel) aux plus élevés (on peut
+        se permettre l’inox). Quelques facteurs auront cependant une incidence
+        sur le prix. Les voici&nbsp;:
+      </p>
+      <ul>
+        <li>
+          <strong
+            >L’état de votre robinetterie, tuyauterie et plomberie
+            existantes&nbsp;:</strong
+          >
+          si votre robinetterie est rouillée ou en mauvais état, elle sera plus
+          difficile à extraire sans endommager la plomberie et votre artisan
+          pourra devoir recourir à une scie. Enfin, la plomberie elle-même devra
+          peut-être subir une remise à niveau.
+        </li>
+        <li>
+          <strong>Votre emplacement&nbsp;:</strong> les prix peuvent bien sûr
+          évoluer selon que vous installez des robinets de cuisine, de salle de
+          bains ou de baignoire.
+        </li>
+        <li>
+          <strong>Votre implantation d’évier&nbsp;:</strong> il est possible que
+          votre évier ou lavabo ne s’adapte pas au robinet de votre choix,
+          auquel cas vous rencontrerez des coûts d’aménagement&nbsp;: adaptation
+          ou remplacement de votre évier. Le plus simple est bien sûr de vous
+          contenter d’un modèle de robinet compatible à votre implantation
+          existante, mais le robinet peut aussi être l’arbre qui cache la forêt
+          et modifier l’échelle de votre projet&nbsp;!
+        </li>
+        <li>
+          <strong>Le type de robinetterie choisi</strong> influera bien
+          évidemment sur votre calcul de prix final.
+        </li>
+        <li>
+          <strong>Vos travaux éventuels d’amélioration&nbsp;:</strong> si vous
+          profitez de vos travaux pour installer par exemple un filtre à eau ou
+          un nouvel éclairage.
+        </li>
+        <li>
+          <strong>La pression et le contrôle de la consommation en eau</strong
+          >&nbsp;: si votre nouveau robinet requiert davantage de pression, il
+          vous faudra effectuer des modifications plus ou moins couteuses. Vous
+          pouvez également investir dans des robinets plus économes pour réduire
+          la consommation en eau.
+        </li>
+        <li>
+          <strong>La main d’œuvre&nbsp;:</strong> ce poste pourra varier selon
+          la complexité du chantier. Faites établir plusieurs devis comparatifs.
+        </li>
+      </ul>
+
+      <br />
+      <h2>
+        <strong
+          >Prix de l’installation d’un robinet&nbsp;: les différents types de
+          robinets de cuisine</strong
+        >
+      </h2>
+      <p>Nos conseils par gamme de prix&nbsp;:</p>
+      <p>
+        <strong>Moins de 45&nbsp;€¹ :</strong> pour un mitigeur d’évier, le
+        premier prix est <strong>de 10&nbsp;€ environ.</strong> Doté d’un bec
+        bas, il est vendu sans marque. Ni beau ni qualitatif, il est garanti 1
+        ou 2 ans seulement. Plus on se rapproche
+        <strong>de 45&nbsp;€,</strong> plus l’esthétique s’améliore, mais cela
+        reste relatif. Il est conseillé de choisir un mitigeur marqué NF
+        <strong>aux alentours de 40&nbsp;€</strong>
+        <strong>et plus</strong> pour une qualité minimale et homologuée :
+        acoustique maîtrisée, bonne tenue des chromes.
+      </p>
+      <p>
+        <strong>De 45&nbsp;€ à 139&nbsp;€&nbsp;:</strong> ces tarifs
+        correspondent au milieu de gamme, pour des produits, garantis entre 5 et
+        10 ans et produits en Asie. <strong>Dès 80&nbsp;€,</strong> l’esthétique
+        passe au premier plan, un plus pour une cuisine ou salle de bains
+        tendance ou design, avec des fonctions supplémentaires (mitigeur
+        escamotable, cartouche à économies d’eau, etc.).
+        <strong>Au-delà de 100&nbsp;€,</strong> l’originalité est au
+        rendez-vous&nbsp;: formes mais aussi finitions (divers types d’inox par
+        exemple). Dans le haut de fourchette, les fabricants européens proposent
+        quelques produits, toujours assez standard cependant.
+      </p>
+      <p>
+        <strong>De 139&nbsp;€ à 250&nbsp;€&nbsp;:</strong> à ce niveau de prix,
+        les mitigeurs d’évier sont vendus chez les spécialistes exclusivement. À
+        la fois design et robustes, ils sont généralement fabriqués en Europe et
+        signés par des marques réputées. Ce sont des valeurs sûres, facilement
+        réparables (cartouches disponibles partout) et répondant aux normes
+        européennes (environnement, qualité). À partir de
+        <strong>250&nbsp;€ à 500 €</strong> et plus, nous entrons dans le haut
+        de gamme de la robinetterie.
+      </p>
+      <p>
+        Aux alentours de <strong>500&nbsp;€</strong>, on trouve des robinets et
+        mitigeurs signés par des designers réputés ou offrant des
+        fonctionnalités intéressantes&nbsp;: filtration de l’eau, ouverture avec
+        bouton poussoir, douchette extractible.
+      </p>
+      <p>
+        Enfin, à compter de <strong>500&nbsp;€</strong> le robinet, le luxe fait
+        son entrée.
+      </p>
+
+      <br />
+      <button>
+        Demandez un devis gratuit pas des professionnels qualifiées
+      </button>
+      <br />
+      <br />
+      <h2 id="prix-de-linstallation-dun-robinet-robinets-de-salle-de-bains">
+        <strong
+          >Prix de l’installation d’un robinet&nbsp;: robinets de salle de
+          bains</strong
+        >
+      </h2>
+      <p>
+        Le <strong>remplacement d’un robinet</strong> de baignoire est une
+        opération simple et rapide dans la majorité des cas. Malgré tout, entre
+        la fourniture de la robinetterie et la pose, le tarif d’un plombier peut
+        <strong>varier entre</strong>
+        <strong>150&nbsp;€ et 500&nbsp;€,</strong> main d’œuvre et robinetterie
+        comprises.
+      </p>
+      <p>
+        Bien entendu, le prix facturé par le plombier dépend en premier lieu du
+        type de robinet à poser. Les plombiers ont pour habitude de conseiller
+        des marques de qualité (Grohe ou plus luxueux...) plus onéreuses mais
+        sans surprise. N’hésitez pas à définir vos choix vous-même.
+      </p>
+      <p>
+        Aussi, le devis d’un plombier pour le changement de robinets de
+        baignoire reprendra en général les postes suivants : un tarif horaire
+        (main d’œuvre et déplacement compris) de <strong>90 €</strong> la
+        première heure et de <strong>50 €</strong> pour les heures suivantes ;
+        des fournitures, selon la robinetterie, mélangeur ou mitigeur : de
+        <strong>50 € à 150 €</strong> ; traditionnel : de
+        <strong>50 € à 250 €</strong> ; thermostatique : de
+        <strong>100 € à 300 €</strong> ; à infrarouge : de
+        <strong>200 € à 400 €</strong>
+      </p>
+      <br />
+      <br />
+
+      <h2
+        id="prix-de-linstallation-dun-robinet-les-differents-types-de-robinets-de-salle-de-bains"
+      >
+        <strong
+          >Prix de l’installation d’un robinet&nbsp;: les différents types de
+          robinets de salle de bains</strong
+        >
+      </h2>
+      <p>
+        Pour une salle de bains et une baignoire, les différents types de
+        robinets sont les suivants :
+      </p>
+      <p>
+        <strong>Le robinet mitigeur</strong> : on l’actionne grâce à une manette
+        unique. Très pratique, il se manipule d’une seule main et permet le
+        dosage de la température de l’eau facilement. Il peut être équipé d’un
+        détecteur à infrarouge afin d’économiser l’eau, car il atteint une
+        température de chauffe rapidement, et se déclencher au passage des mains
+        devant le capteur. S’il est thermostatique, il intègre un régulateur de
+        température afin d’éviter les risques de brûlure aux plus jeunes.
+      </p>
+      <p>
+        <strong>Le robinet thermostatique</strong> : il s’agit d’un robinet
+        mitigeur particulier, permettant le préréglage de la température de
+        l’eau. Le mitigeur thermostatique se charge du mélange de l’eau froide
+        et de l’eau chaude afin de produire une eau à température constante. De
+        plus, si une coupure d’eau froide intervient pendant votre douche, il
+        s’arrête automatiquement.
+      </p>
+      <p>
+        <strong>Le robinet classique</strong> ou
+        <strong>mélangeur</strong>&nbsp; : il se compose de deux robinets
+        distincts, l’un pour l’eau froide et l’autre pour l’eau chaude. Il faut
+        donc ajuster les deux robinets pour obtenir la température d’eau
+        désirée. Par conséquent, il est moins économique que le mitigeur, tant
+        en énergie qu’en eau. Il possède cependant une capacité de débit très
+        performante. Très traditionnel, il s’intègre mieux dans des salles de
+        bains classiques, voire vintage.
+      </p>
+      <h2
+        id="prix-de-linstallation-dun-robinet-precautions-a-suivre-avant-de-changer-un-robinet"
+      >
+        <strong
+          >Prix de l’installation d’un robinet&nbsp;: précautions à suivre avant
+          de changer un robinet</strong
+        >
+      </h2>
+      <p>
+        Cela semble évident, mais il est toujours bon de le rappeler : il faut
+        couper votre arrivée d’eau avant de commencer vos travaux. Dans le cas
+        contraire, vous risquez d’inonder votre salle de bains. En bougeant ou
+        en dévissant les raccords de plomberie, l’eau va s’écouler à grande
+        pression. Une fois l’arrivée d’eau de votre maison ou appartement
+        coupée, ouvrez un robinet et laissez le surplus d’eau s’évacuer. Puis
+        bouchez la baignoire et vous éviterez tout risque d’inondation.
+      </p>
+      <em
+        >¹ Ces tarifs sont exprimés en Euros, toutes taxes comprises (TTC). Ils
+        sont issus de moyennes de prix de divers sites internet de
+        construction.</em
+      >
+      <br />
+      <br />
+      <button>
+        Demandez un devis gratuit pas des professionnels qualifiées
+      </button>
+      <br />
+      <br />
+    </section>
+
+    <section class="city-list">
+      <h2>Trouvez un plombier près de chez vous</h2>
+      <ul data-testid="localities-list" class="e14wt0ho0 css-1l2dygu ey61ssu0">
+        <li class="css-njunhz ehjjht20">
+          <a href="#">Nice</a>
+        </li>
+        <li class="css-njunhz ehjjht20">
+          <a href="/plomberie/plombier-professionnels/toulouse">Toulouse</a>
+        </li>
+        <li class="css-njunhz ehjjht20">
+          <a href="/plomberie/plombier-professionnels/montpellier"
+            >Montpellier</a
+          >
+        </li>
+        <li class="css-njunhz ehjjht20">
+          <a href="/plomberie/plombier-professionnels/toulon">Toulon</a>
+        </li>
+        <li class="css-njunhz ehjjht20">
+          <a href="/plomberie/plombier-professionnels/bordeaux">Bordeaux</a>
+        </li>
+        <li class="css-njunhz ehjjht20">
+          <a href="/plomberie/plombier-professionnels/reims">Reims</a>
+        </li>
+        <li class="css-njunhz ehjjht20">
+          <a href="/plomberie/plombier-professionnels/antibes">Antibes</a>
+        </li>
+        <li class="css-njunhz ehjjht20">
+          <a href="/plomberie/plombier-professionnels/aix-en-provence"
+            >Aix-en-Provence</a
+          >
+        </li>
+        <li class="css-njunhz ehjjht20">
+          <a href="/plomberie/plombier-professionnels/nimes">Nîmes</a>
+        </li>
+        <li class="css-njunhz ehjjht20">
+          <a href="/plomberie/plombier-professionnels/strasbourg">Strasbourg</a>
+        </li>
+        <li class="css-njunhz ehjjht20">
+          <a href="/plomberie/plombier-professionnels/nantes">Nantes</a>
+        </li>
+        <li class="css-njunhz ehjjht20">
+          <a href="/plomberie/plombier-professionnels/frejus">Fréjus</a>
+        </li>
+        <li class="css-njunhz ehjjht20">
+          <a href="/plomberie/plombier-professionnels/paris-08">Paris 08</a>
+        </li>
+        <li class="css-njunhz ehjjht20">
+          <a href="/plomberie/plombier-professionnels/la-seyne-sur-mer"
+            >La Seyne-sur-Mer</a
+          >
+        </li>
+        <li class="css-njunhz ehjjht20">
+          <a href="/plomberie/plombier-professionnels/perpignan">Perpignan</a>
+        </li>
+        <li class="css-njunhz ehjjht20">
+          <a href="/plomberie/plombier-professionnels/lille">Lille</a>
+        </li>
+        <li class="css-njunhz ehjjht20">
+          <a href="/plomberie/plombier-professionnels/paris-18">Paris 18</a>
+        </li>
+        <li class="css-njunhz ehjjht20">
+          <a href="/plomberie/plombier-professionnels/montreuil">Montreuil</a>
+        </li>
+        <li class="css-njunhz ehjjht20">
+          <a href="/plomberie/plombier-professionnels/paris-19">Paris 19</a>
+        </li>
+        <li class="css-njunhz ehjjht20">
+          <a href="/plomberie/plombier-professionnels">Autres villes</a>
+        </li>
+      </ul>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script>$(window).scroll(function() {
+      if ($(this).scrollTop()>250)
+       {
+          $('.foo').hide(1000);
+       }
+      else
+       {
+        $('.foo').show(1000);
+       }
+   });</script> -->
+
+    <script>
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 600) {
+          $(".second").show(1000);
+          console.log("second");
+        } else {
+          $(".second").hide(1000);
+        }
+      });
+    </script>
+    <!-- <script>
+    var $logo = $('.foo');
+      $(document).scroll(function() {
+        
+          $logo.css({position: $(this).scrollTop()>100 ? "relative":"fixed"});
+          console.log('done')
+      });</script> -->
+  </body>
+</html>
